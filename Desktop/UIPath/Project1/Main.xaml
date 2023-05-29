@@ -1,0 +1,206 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1410.4,2103.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="833.6,2038.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="771.2,1926.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="False">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="737.6,1840" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="675.2,1728" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\caine\Desktop\UIPath\Project1\Project\Input\ProductsToBeScraped.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="641.6,1458.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="Products" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="579.2,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Products1&quot;)]" SaveTo="[Products]" />
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: JD Sports Global | Shop Online Now" sap:VirtualizedContainerService.HintSize="579.2,1136.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="e298040b-391f-4b89-9301-17eedeece26e" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545.6,920" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Products]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="483.2,804.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,687.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Search" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e298040b-391f-4b89-9301-17eedeece26e" Text="[CurrentRow.Item(&quot;Product&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.global.jdsports.com/" CvElementArea="988, 146, 390, 52" CvTextArea="1002, 164, 295, 17" CvTextArgument="Search Nike, adidas, latest footwear etc?" CvType="InputBox" DesignTimeRectangle="991, 204, 388, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT srchInput'" FullSelectorArgument="&lt;webctrl id='srchInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='srchInput' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="04a030a3-2bc6-4e46-b5b5-f113fbc0baf0" ImageBase64="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" InformativeScreenshot="98ba6a8f95ba4377053d457264591adc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='JD Sports Global | Shop Online Now' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Tittle' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Tittle Url' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Price' ReferenceName='Column2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e298040b-391f-4b89-9301-17eedeece26e" Timeout="5" Version="V3">
+                                      <uix:NExtractData.NextLink>
+                                        <uix:TargetAnchorable BrowserURL="https://www.global.jdsports.com/search/Jordan/?from=144" DesignTimeRectangle="902, 344, 45, 45" DesignTimeScaleFactor="1.25" FriendlyName="'A /search/Jordan/?from=…'" FullSelectorArgument="&lt;webctrl aaname='Next Page' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next Page' tag='A' type='' class='btn btn-default pageNav' /&gt;" Guid="2bd26f22-2781-4895-bc60-99ff0aa7dc2b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADUSURBVGhD7dEhDsJAEIVhTrSuCbcAVccRuAWyEtVgUJwFQ4pCgesFSJrUPRjSkiBQMJO3zfuTETtqv8wME2haiLZts5uxD0ROCcGSECwJwZIQLAnBkhAsCcGSECz5I7oG9eaAaze8HQpBVIuEYu0H8UdY96MrJAZhOULiEJYTJBaBHs22RJqXqM/9sPu9QESPy26FIi1Rnf4HsIIQfgArAOELsPwRtz1KR4AVcInnLfz+/yoE4Z0QLAnBkhAsCcGSECwJwZIQLH1F5DZjb0TOTQABPACqKgUY8+zYZQAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='3 - 9 | Jordan' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                      </uix:NExtractData.NextLink>
+                                      <uix:NExtractData.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.global.jdsports.com/search/Jordan/?from=576" DesignTimeRectangle="373, 599, 1488, 8506" DesignTimeScaleFactor="1.25" ElementType="List" FriendlyName="'UL productListMain'" FullSelectorArgument="&lt;webctrl id='productListMain' tag='UL' /&gt;" Guid="838be280-d480-408a-bac5-cc5d5cc9a255" InformativeScreenshot="d6edd2f07c1fedeb6f0c13211d4a3ba8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='9 - 9 | Jordan' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                      </uix:NExtractData.Target>
+                                    </uix:NExtractData>
+                                    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[CurrentRow.Item(&quot;Product&quot;).ToString]" WorkbookPath="C:\Users\caine\Desktop\UIPath\Project1\Project\Output\Data.xlsx" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                            </ui:ForEachRow>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="861100a6fac5ca85085d5c69984428f6.jpg" Selector="&lt;html app='chrome.exe' title='JD Sports Global | Shop Online Now' /&gt;" Title="JD Sports Global | Shop Online Now" Url="https://www.global.jdsports.com/" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
